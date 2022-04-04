@@ -15,6 +15,9 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+
 public class lists extends AppCompatActivity {
     ListView listView;
     @Override
@@ -29,29 +32,32 @@ public class lists extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Sity);
         listView.setAdapter(adapter);
         final String[] musei1 = new String[]{
-                "Музей трудовой славы","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч",
+                "Музей трудовой славы AЭХК","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч",
                 "ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч",
         };
-ArrayAdapter<String> mus1= new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, musei1);
+        ArrayAdapter<String> mus1= new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, musei1);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
                                     long id) {
-                if (id == 0) {
+
+                String name = ((TextView)itemClicked).getText().toString();
+                if (name == "Ангарск") {
                     listView.setAdapter(mus1);
                 }else{
+                    if (name == "Музей трудовой славы AЭХК"){
+                        startActivity (new Intent(lists.this, museums.class));
+                    }else{
                     Toast toast = Toast.makeText(getApplicationContext(),
-                            "Coming Soon", Toast.LENGTH_SHORT);
-                    toast.show();
+                            "В разработке", Toast.LENGTH_SHORT);
+                    toast.show();}
 
-            }
                 }
-
-
+            }
 
         });
-        }
+    }
     public void onBackPressed(){
         final String[] Sity = new String[]{
                 "Ангарск", "Иркутск", "Москва", "Санкт-Петербург", "Красноярск",
@@ -70,7 +76,7 @@ ArrayAdapter<String> mus1= new ArrayAdapter<>(this,android.R.layout.simple_list_
         super.onOptionsItemSelected(item);
         switch (item.getItemId()) {
             case R.id.mexit:
-                finish();  //TODO завершить приложение
+                finish(); //TODO завершить приложение
         }
         return true;
     }
