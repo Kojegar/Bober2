@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bober">
         <activity
+            android:name=".MyDialogFragment"
+            android:exported="false" />
+        <activity
             android:name=".museums"
             android:exported="false" />
         <activity
