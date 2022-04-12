@@ -24,12 +24,11 @@ public class lists extends AppCompatActivity {
         listView = findViewById(R.id.lists);
         final String[] Sity = new String[]{
                 "Ангарск", "Иркутск", "Москва", "Санкт-Петербург", "Красноярск",
-                "Новосибирск", "Екатеринбург", "Сочи"};
+                "Новосибирск", "Екатеринбург", "Сочи","Ставрополь","Перьм","Саратов","Владивосток","Владикавказ","Екатеринбург","Казань","Калининград", "Калуга","Владимир"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Sity);
         listView.setAdapter(adapter);
         final String[] musei1 = new String[]{
-                "Музей трудовой славы AЭХК","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч",
-                "ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч","ч",
+                "Музей трудовой славы AЭХК","Музей часов","Музей победы","Музей минералов","Городской музей"
         };
         ArrayAdapter<String> mus1= new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, musei1);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
