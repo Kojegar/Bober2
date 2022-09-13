@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Bober2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.196" />
         <entry key="..\:/Bober2/app/src/main/res/layout/acriviry_sity.xml" value="0.2115036231884058" />
         <entry key="..\:/Bober2/app/src/main/res/layout/activity_about.xml" value="0.21422101449275363" />
+        <entry key="..\:/Bober2/app/src/main/res/layout/activity_avto.xml" value="0.36666666666666664" />
         <entry key="..\:/Bober2/app/src/main/res/layout/activity_lists.xml" value="0.33" />
         <entry key="..\:/Bober2/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Bober2/app/src/main/res/layout/activity_museums.xml" value="0.33" />
         <entry key="..\:/Bober2/app/src/main/res/layout/activity_my_dialog_fragment.xml" value="0.22135416666666666" />
+        <entry key="..\:/Bober2/app/src/main/res/layout/activity_nonavto.xml" value="0.3424124513618677" />
         <entry key="..\:/Bober2/app/src/main/res/layout/activity_spisok.xml" value="0.25" />
         <entry key="..\:/Bober2/app/src/main/res/layout/activity_splash.xml" value="0.21422101449275363" />
         <entry key="..\:/Bober2/app/src/main/res/menu/atlas.xml" value="0.18854166666666666" />
@@ -16,7 +19,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

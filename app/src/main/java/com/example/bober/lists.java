@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class lists extends AppCompatActivity {
+
     ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class lists extends AppCompatActivity {
                 }else{
                     if (name == "Музей трудовой славы AЭХК"){
                         startActivity (new Intent(lists.this, museums.class));
+                        finish();
                     }else{
                     Toast toast = Toast.makeText(getApplicationContext(),
                             "В разработке", Toast.LENGTH_SHORT);
@@ -55,7 +57,7 @@ public class lists extends AppCompatActivity {
     public void onBackPressed(){
         final String[] Sity = new String[]{
                 "Ангарск", "Иркутск", "Москва", "Санкт-Петербург", "Красноярск",
-                "Новосибирск", "Екатеринбург", "Сочи"};
+                "Новосибирск", "Екатеринбург", "Сочи","Ставрополь","Перьм","Саратов","Владивосток","Владикавказ","Екатеринбург","Казань","Калининград", "Калуга","Владимир"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Sity);
         listView.setAdapter(adapter);
     }

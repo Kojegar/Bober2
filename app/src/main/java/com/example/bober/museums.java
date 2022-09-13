@@ -2,10 +2,10 @@ package com.example.bober;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -60,9 +60,16 @@ Button button;
     };
 
     void saveData() {
-        Toast.makeText(this, "ок", Toast.LENGTH_SHORT).show();
+        Intent i;
+        i=new Intent(this, avto.class);
+        startActivity(i);
+        finish();
+
     }
     void suvData(){
-        Toast.makeText(this, "не ок", Toast.LENGTH_SHORT).show();
+        Intent i;
+        i=new Intent(this, nonavto.class);
+        startActivity(i);
+        finish();
     }
 }

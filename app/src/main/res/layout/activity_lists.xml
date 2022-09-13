@@ -5,13 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lists">
+    tools:context=".lists"
+    android:background="@drawable/kkk" >
 
     <ListView
         android:id="@+id/lists"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        />
 
 
 </LinearLayout>

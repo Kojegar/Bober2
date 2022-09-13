@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bober">
         <activity
+            android:name=".nonavto"
+            android:exported="false" />
+        <activity
+            android:name=".avto"
+            android:exported="false" />
+        <activity
             android:name=".MyDialogFragment"
             android:exported="false" />
         <activity

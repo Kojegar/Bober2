@@ -23,40 +23,33 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
-                android:layout_height="338dp"
+                android:layout_height="107dp"
+                android:layout_margin="10dp"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/first"
-                android:layout_margin="10dp"/>
+                app:srcCompat="@drawable/logotip_aexk" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/discr"
+                android:text="@string/one"
                 android:scaleType="fitXY"/>
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="588dp"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/ger"
-                android:layout_margin="10dp"/>
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
-                android:layout_height="769dp"
+                android:layout_height="400dp"
+                android:layout_margin="10dp"
                 android:contentDescription="@string/noimage"
                 android:scaleType="fitXY"
-                android:src="@drawable/gor"
-                android:layout_margin="10dp"/>
+                android:src="@drawable/fffa" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/discr2"
+                android:text="@string/two"
                 android:scaleType="fitXY"/>
 
             <Button
